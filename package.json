@@ -1,0 +1,23 @@
+{
+	"name": "gotalentextensions",
+	"displayName": "GOTalentExtensions",
+	"description": "",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.90.0"
+	},
+	"categories": [
+		"Extension Packs"
+	],
+	"extensionPack": [
+		"formulahendry.auto-rename-tag",
+		"akamud.vscode-theme-onedark",
+		"andischerer.theme-atom-one-dark",
+		"pranaygp.vscode-css-peek",
+		"PKief.material-icon-theme",
+		"Gruntfuggly.todo-tree",
+		"usernamehw.errorlens",
+		"glenn2223.live-sass",
+		"ritwickdey.LiveServer"
+	]
+}
