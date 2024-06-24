@@ -20,6 +20,7 @@
 		"Gruntfuggly.todo-tree",
 		"usernamehw.errorlens",
 		"glenn2223.live-sass",
-		"ritwickdey.LiveServer"
+		"ritwickdey.LiveServer",
+		"formulahendry.code-runner"
 	]
 }
