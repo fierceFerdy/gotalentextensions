@@ -19,21 +19,21 @@
 	"contributes": {
 		"commands": [
 			{
-				"command": "customWelcome.show",
+				"command": "goTalent.show",
 				"title": "Show Custom Welcome Page"
 			}
 		],
 		"configuration": {
 			"title": "Custom Welcome Page",
 			"properties": {
-				"customWelcome.maxProjects": {
+				"goTalent.maxProjects": {
 					"type": "number",
 					"default": 6,
 					"minimum": 1,
 					"maximum": 50,
 					"description": "Maximum number of recent projects to display"
 				},
-				"customWelcome.username": {
+				"goTalent.username": {
 					"type": "string",
 					"default": "",
 					"description": "Your name"
@@ -64,7 +64,6 @@
 		"Gruntfuggly.todo-tree",
 		"edwinhuish.better-comments-next",
 		"michelemelluso.code-beautifier",
-		"streetsidesoftware.code-spell-checker",
 		"formulahendry.auto-rename-tag",
 
 		"glenn2223.live-sass",

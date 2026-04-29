@@ -19,7 +19,7 @@ interface RecentlyOpened {
 }
 
 export async function getRecentProjects(): Promise<RecentProject[]> {
-    const config = vscode.workspace.getConfiguration('customWelcome');
+    const config = vscode.workspace.getConfiguration('goTalent');
     const maxProjects = config.get<number>('maxProjects', 24);
 
     try {

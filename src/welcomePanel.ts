@@ -4,15 +4,15 @@ import { getRecentProjects } from './recentProjects';
 
 export class WelcomePanel {
     public static currentPanel: WelcomePanel | undefined;
-    public static readonly viewType = 'customWelcome';
+    public static readonly viewType = 'goTalent';
 
     private readonly _panel: vscode.WebviewPanel;
     private readonly _extensionUri: vscode.Uri;
     private _disposables: vscode.Disposable[] = [];
 
-    public static config = vscode.workspace.getConfiguration('customWelcome');
+    public static config = vscode.workspace.getConfiguration('goTalent');
     public static get username():string{
-        const name = vscode.workspace.getConfiguration('customWelcome').get<string>('username');
+        const name = vscode.workspace.getConfiguration('goTalent').get<string>('username');
         return name?.trim()?name:os.userInfo().username;
     }
 
