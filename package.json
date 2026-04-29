@@ -1,24 +1,77 @@
 {
 	"name": "gotalentextensions",
-	"displayName": "GOTalentExtensions",
+	"displayName": "GO! Talent",
 	"publisher": "fierceFerdy",
-	"description": "",
-	"version": "0.0.2",
+	"description": "A bunch of extensions and an expansion to the welcome screen",
+	"version": "0.1.0",
 	"repository": "gotalentextensions",
 	"engines": {
 		"vscode": "^1.90.0"
 	},
 	"categories": [
-		"Extension Packs"
+		"Extension Packs",
+		"Other"
 	],
+	"activationEvents": [
+		"onStartupFinished"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "customWelcome.show",
+				"title": "Show Custom Welcome Page"
+			}
+		],
+		"configuration": {
+			"title": "Custom Welcome Page",
+			"properties": {
+				"customWelcome.maxProjects": {
+					"type": "number",
+					"default": 6,
+					"minimum": 1,
+					"maximum": 50,
+					"description": "Maximum number of recent projects to display"
+				},
+				"customWelcome.username": {
+					"type": "string",
+					"default": "",
+					"description": "Your name"
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"lint": "eslint src --ext ts"
+	},
+	"devDependencies": {
+		"@types/node": "^20.0.0",
+		"@types/vscode": "^1.80.0",
+		"@typescript-eslint/eslint-plugin": "^6.0.0",
+		"@typescript-eslint/parser": "^6.0.0",
+		"@vscode/vsce": "^3.9.1",
+		"eslint": "^8.0.0",
+		"typescript": "^5.0.0"
+	},
 	"extensionPack": [
-		"formulahendry.auto-rename-tag",
-		"akamud.vscode-theme-onedark",
+		"akamud.vscode-theme-onedark", 
 		"andischerer.theme-atom-one-dark",
 		"PKief.material-icon-theme",
+
 		"Gruntfuggly.todo-tree",
+		"edwinhuish.better-comments-next",
+		"michelemelluso.code-beautifier",
+		"streetsidesoftware.code-spell-checker",
+		"formulahendry.auto-rename-tag",
+
 		"glenn2223.live-sass",
 		"ritwickdey.LiveServer",
+		"ms-dotnettools.vscode-dotnet-runtime",
+		"zobo.php-intellisense",
+
 		"formulahendry.code-runner"
 	]
 }
