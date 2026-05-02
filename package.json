@@ -70,6 +70,7 @@
 		"ritwickdey.LiveServer",
 		"ms-dotnettools.vscode-dotnet-runtime",
 		"zobo.php-intellisense",
+		"usernamehw.errorlens",
 
 		"formulahendry.code-runner"
 	]
