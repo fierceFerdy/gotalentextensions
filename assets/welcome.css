@@ -125,6 +125,16 @@ body {
 			width: 40px;
 			height: 40px;
 		}
+
+		img{
+			width: 84%;
+			height: auto;
+
+			position: relative;
+			left: 8%;
+			top: 50%;
+			transform: translateY(-50%);
+		}
 	}
 
 	.project-info {

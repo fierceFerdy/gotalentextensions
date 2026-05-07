@@ -3,7 +3,7 @@
 	"displayName": "GO! Talent",
 	"publisher": "fierceFerdy",
 	"description": "A bunch of extensions and an expansion to the welcome screen",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"repository": "gotalentextensions",
 	"engines": {
 		"vscode": "^1.90.0"
@@ -64,7 +64,6 @@
 		"Gruntfuggly.todo-tree",
 		"edwinhuish.better-comments-next",
 		"michelemelluso.code-beautifier",
-		"formulahendry.auto-rename-tag",
 
 		"glenn2223.live-sass",
 		"ritwickdey.LiveServer",
