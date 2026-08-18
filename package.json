@@ -50,27 +50,24 @@
 	"devDependencies": {
 		"@types/node": "^20.0.0",
 		"@types/vscode": "^1.80.0",
-		"@typescript-eslint/eslint-plugin": "^6.0.0",
-		"@typescript-eslint/parser": "^6.0.0",
+		"@typescript-eslint/eslint-plugin": "^8.67.0",
+		"@typescript-eslint/parser": "^8.67.0",
 		"@vscode/vsce": "^3.9.1",
-		"eslint": "^8.0.0",
-		"typescript": "^5.0.0"
+		"eslint": "^8.57.1",
+		"typescript": "^6.0.3"
 	},
 	"extensionPack": [
-		"akamud.vscode-theme-onedark", 
+		"akamud.vscode-theme-onedark",
 		"andischerer.theme-atom-one-dark",
 		"PKief.material-icon-theme",
-
 		"Gruntfuggly.todo-tree",
 		"edwinhuish.better-comments-next",
 		"michelemelluso.code-beautifier",
-
 		"glenn2223.live-sass",
 		"ritwickdey.LiveServer",
 		"ms-dotnettools.vscode-dotnet-runtime",
 		"zobo.php-intellisense",
 		"usernamehw.errorlens",
-
 		"formulahendry.code-runner"
 	]
 }
