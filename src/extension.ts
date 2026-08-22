@@ -1,5 +1,6 @@
 import * as vscode from 'vscode';
 import { WelcomePanel } from './welcomePanel';
+import { ShortcutsPanel } from './shortcutsPanel';
 
 export function activate(context: vscode.ExtensionContext) {
     // Register the command to show the welcome page manually
@@ -7,6 +8,12 @@ export function activate(context: vscode.ExtensionContext) {
         WelcomePanel.createOrShow(context);
     });
     context.subscriptions.push(showCommand);
+
+    // Register the command to show the keyboard shortcuts page
+    const showShortcutsCommand = vscode.commands.registerCommand('goTalent.showShortcuts', () => {
+        ShortcutsPanel.createOrShow(context);
+    });
+    context.subscriptions.push(showShortcutsCommand);
 
     // Register command to apply recommended settings
     const applySettingsCommand = vscode.commands.registerCommand('goTalent.applySettings', async () => {

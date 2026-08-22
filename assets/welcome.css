@@ -63,12 +63,12 @@ body {
     padding: 10px 20px;
     background-color: var(--vscode-button-background);
     color: var(--vscode-button-foreground);
-    border: none;
+    border: 1px solid transparent;
     border-radius: 4px;
     font-size: 13px;
     font-family: inherit;
     cursor: pointer;
-    transition: background-color 0.15s ease;
+    transition: background-color 0.15s ease, filter 0.15s ease;
 
 	&:hover {
 		background-color: var(--vscode-button-hoverBackground);
@@ -81,6 +81,18 @@ body {
 
 	svg {
 		flex-shrink: 0;
+		width: 1em;
+		height: 1em;
+		font-size: inherit;
+	}
+}
+
+body.vscode-light .action-button {
+	filter: brightness(0.92);
+	border-color: rgba(0, 0, 0, 0.2);
+
+	&:hover {
+		filter: brightness(0.85);
 	}
 }
 
@@ -93,13 +105,20 @@ body {
 	}
 
 	.projects {
-		display: block;
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 10px;
+	}
+}
+
+@media (min-width: 600px) {
+	.recent-projects .projects {
+		grid-template-columns: repeat(2, 1fr);
 	}
 }
 
 .project-card {
     display: block;
-    margin-bottom: 10px;
 	width: 100%;
     padding: 16px;
     background-color: var(--vscode-sideBar-background, var(--vscode-editor-background));

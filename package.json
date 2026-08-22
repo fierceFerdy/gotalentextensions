@@ -3,7 +3,7 @@
 	"displayName": "GO! Talent",
 	"publisher": "fierceFerdy",
 	"description": "A bunch of extensions and an expansion to the welcome screen",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"repository": "gotalentextensions",
 	"engines": {
 		"vscode": "^1.90.0"
@@ -21,6 +21,10 @@
 			{
 				"command": "goTalent.show",
 				"title": "Show Custom Welcome Page"
+			},
+			{
+				"command": "goTalent.showShortcuts",
+				"title": "Show Keyboard Shortcuts"
 			}
 		],
 		"configuration": {
