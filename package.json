@@ -63,15 +63,16 @@
 	"extensionPack": [
 		"akamud.vscode-theme-onedark",
 		"andischerer.theme-atom-one-dark",
-		"PKief.material-icon-theme",
-		"Gruntfuggly.todo-tree",
 		"edwinhuish.better-comments-next",
-		"michelemelluso.code-beautifier",
+		"formulahendry.code-runner",
+		"formulahendry.auto-rename-tag",
 		"glenn2223.live-sass",
-		"ritwickdey.LiveServer",
+		"Gruntfuggly.todo-tree",
+		"michelemelluso.code-beautifier",
 		"ms-dotnettools.vscode-dotnet-runtime",
-		"zobo.php-intellisense",
+		"PKief.material-icon-theme",
+		"ritwickdey.LiveServer",
 		"usernamehw.errorlens",
-		"formulahendry.code-runner"
+		"zobo.php-intellisense"
 	]
 }

@@ -45,17 +45,26 @@ async function applyRecommendedSettings(): Promise<void> {
     const settings: Record<string, unknown> = {
         'editor.fontFamily': 'Inconsolata',
         'editor.fontSize': 14,
-        'editor.insertSpaces': false,
         'editor.detectIndentation': false,
+        'editor.folding': false,
+        'editor.glyphMargin': false, // undo this if you want to use the debugger
+        'editor.insertSpaces': false,
+        'editor.minimap.enabled': false,
+        'editor.wordSeparators': "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?", // also select $ with double click
+        'editor.wordWrap': 'on',
         'explorer.confirmDelete': false,
         'explorer.confirmDragAndDrop': false,
+        'files.exclude': {
+            '.gitattributes': true,
+            'package-lock.json': true
+        },
+		"git.autofetch": true,
         'git.confirmSync': false,
-        'editor.glyphMargin': false,
-        'editor.wordWrap': 'on',
+		// "git.openRepositoryInParentFolders": "always",
         'liveSassCompile.settings.showOutputWindowOn': 'Error',
-        'editor.minimap.enabled': false,
-        'editor.wordSeparators': "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?",
         'liveServer.settings.CustomBrowser': 'chrome',
+		"liveServer.settings.donotVerifyTags": true,
+		"liveServer.settings.donotShowInfoMsg": true,
         'workbench.externalBrowser': 'chrome',
 		'workbench.iconTheme': 'material-icon-theme',
         'workbench.colorTheme': 'Dark Modern',
@@ -72,12 +81,12 @@ async function applyRecommendedSettings(): Promise<void> {
                 'titleBar.activeBackground': '#0a0d10'
             }
         },
-        'files.exclude': {
-            '.gitattributes': true,
-            'package-lock.json': true
-        },
+		// "breadcrumbs.enabled": false,
+		"terminal.integrated.defaultProfile.windows": "Command Prompt",
+		// "workbench.editor.useModal": "off", // Forgot what it does, need to test
         'workbench.sideBar.location': 'right',
-        'editor.folding': false
+		"chat.titleBar.openInAgentsWindow.enabled": false, // Hide annoying 'open in agents' button
+		"chat.disableAIFeatures": true,
     };
 
     for (const [key, value] of Object.entries(settings)) {
